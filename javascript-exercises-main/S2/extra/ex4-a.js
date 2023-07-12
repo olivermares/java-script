@@ -27,3 +27,4 @@ let texts = ['mosquito' , 'bmw', 'no']
 for (const ejemplo of ejemplos) {
     console.log(findArrayIndex(ejemplo,ejemplo[0]));
 }
+

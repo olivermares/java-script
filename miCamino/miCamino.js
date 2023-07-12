@@ -250,11 +250,6 @@ aux.forEach((element) => {
   else if (typeof element === "object")text += `\n ${element.cima}`;
 });
 
-/*for (let index = 0; index < aux.length; index++) {
-  const element = aux[index];
-  if (typeof element === "string" && element !== 'undefined') text = text + element + ' ';
-}*/
-
 console.log(text);
 
 //por ultimo como bonus,en un console.log mostraremos por pantalla las urls de todas las imagenes de los materiales y en otro haremos la media de la altitud de todas la cimas que hemos subido.
