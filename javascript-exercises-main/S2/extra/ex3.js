@@ -43,11 +43,6 @@ let format = [];
 let totalVolume =[];
 let count =[];
 
-// array [0,0,0,0,0,0]
-// nombreArray[
-    variable = 0
-    var =
-]
 
 for (const user of users) {
     for (const key in user.favoritesSounds) {

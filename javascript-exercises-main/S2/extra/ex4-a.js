@@ -17,13 +17,12 @@ Ej array:
 */
 
 let ejemplos =[['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'], ["Saab", "Volvo", "BMW"], ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']]
-let texts = ['mosquito' , 'bmw', 'no']
 
 function findArrayIndex(array, text) {
-    return array.findArrayIndex()
-}
+    return array.indexOf(text)
+} 
 
 for (const ejemplo of ejemplos) {
-    console.log(findArrayIndex(ejemplo,ejemplo[0]));
+    console.log(findArrayIndex(ejemplo,'Volvo'));
 }
 

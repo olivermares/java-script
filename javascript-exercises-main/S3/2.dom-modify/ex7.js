@@ -8,9 +8,11 @@ p$$.forEach(element => {
    element.remove()
 });
 
+/*
 for (const element of p$$) {
     element.remove()
 }
+*/
 
 
 // Segunda todo de golpe
