@@ -37,3 +37,39 @@ const users = [
         }
     },
 ]
+
+let favorites =[];
+let format = [];
+let totalVolume =[];
+let count =[];
+
+// array [0,0,0,0,0,0]
+// nombreArray[
+    variable = 0
+    var =
+]
+
+for (const user of users) {
+    for (const key in user.favoritesSounds) {
+        if (!favorites.includes(key)){
+            favorites.push(key);
+            format.push(user.favoritesSounds[key].format);
+            totalVolume.push(user.favoritesSounds[key].volume);
+            count.push(1)
+        }
+        else{
+            let i = favorites.indexOf(key);
+            totalVolume[i] += user.favoritesSounds[key].volume
+            count[i] += 1;
+        }
+    }
+}
+console.log(favorites)
+console.log(format)
+console.log(totalVolume)
+console.log(count)
+
+console.log(`Los sonidos favoritos son:`)
+for (let index = 0; index < favorites.length; index++) {
+    console.log(`${index + 1}.- ${favorites[index]} con formato ${format[index]} con una media de ${ totalVolume[index]/count[index]}`)    
+}

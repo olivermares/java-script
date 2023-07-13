@@ -242,8 +242,7 @@ for (const cima of miCamino.cimas) {
 //6º: para llegar a la cima tendremos que darnos aliento y decirnos la frase que esta divida y que tiene que quedar así: "Tranquilo,lo peor ha pasado ya.¡Animo!
 //7º: mostraremos el mensaje final guardado en la cima 
 
-let aux =
-  miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV ;
+const aux = miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV ;
 let text = '';
 aux.forEach((element) => {
   if (typeof element === "string") text =text + `${element}  `;
