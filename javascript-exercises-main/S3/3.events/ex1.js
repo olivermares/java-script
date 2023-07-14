@@ -11,10 +11,8 @@ function print (){
 }
 
 //mejor 
-document.body.insertAdjacentHTML("beforeend", `<button id=btnToClick1 onclick="aux">CLICK 2</button>`) //No va la asignacion de la funcion 
-
+document.body.insertAdjacentHTML("beforeend", `<button id=btnToClick1 onclick="print">CLICK 2</button>`) //Funciona pero hay que preguntar que hace onclick
 
 const btn2$$ = document.querySelector('#btnToClick1')
 
-btn2$$.addEventListener('click',print)
-//console.log(btn1$$)
+btn2$$.addEventListener('click',print);

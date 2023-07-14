@@ -3,6 +3,7 @@
 function focus(event){
     console.log(event.target.value);
     console.log('voy bien')
+    console.log(event)
 }
 
 const input$$= document.querySelector('input');
