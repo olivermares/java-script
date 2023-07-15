@@ -1,4 +1,5 @@
-//Basandote en el ejercicio anterior. Crea un botón que elimine el último elemento de la lista.
+//Basandote en el ejercicio anterior. Crea un botón para cada uno de los elementos de las listas que elimine ese mismo elemento del html.
+
 
 const countries = [
     {title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1'}, 
@@ -18,22 +19,32 @@ function createList(elements, init$$) {
             <div>
                 <h4>${element.title}</h4>
                 <img src="${element.imgUrl}"/>
+                <button class="btn2">Remove element</button>
             </div>
             `;
-    
+            
         ul$$.appendChild(li$$);
       });
       init$$.appendChild(ul$$);
 }
 
 const btn$$ = document.querySelector('button')
-btn$$.setAttribute('class','btn');
-
-//Funcion anonima declarada en la version moderna 
+btn$$.setAttribute('class','btn1');
+ 
 btn$$.addEventListener('click',() => {
     const allLi$$ = document.body.querySelectorAll('li');
     allLi$$[allLi$$.length - 1].remove();
 })
 
-//Mi version a diferencia de la solucion propuesta es que me queda la etiqueta ul.
-//No esta bien del todo. 
+
+const btns$$ = document.querySelectorAll('.btn2')
+console.log(btns$$)
+
+for (let index = 0; index < btns$$.length; index++) {
+    btns$$[index].addEventListener('click',() => {
+        const allLi$$ = document.body.querySelectorAll('li');
+        allLi$$[index].remove();
+    });   
+}
+
+ 

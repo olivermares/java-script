@@ -11,7 +11,8 @@ const exams = [
     { name: 'Keanu Reeves', score: 10 }
 ];
 
-const totalApprovedScore = exams.reduce((accumulator, exam) => exam.score >= 5 ? accumulator + exam.score : accumulator, 0);
+const totalApprovedScore = exams.reduce((accumulator, exam) => 
+exam.score >= 5 ? accumulator + exam.score : accumulator, 0);
 
 // const totalApprovedScore = exams.reduce((accumulator, exam) => {
 //     if (exam.score >= 5) {

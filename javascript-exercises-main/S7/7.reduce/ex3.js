@@ -1,9 +1,5 @@
-/*
-Dado el siguiente array, haz una suma de todos las notas de los examenes de los alumnos que esten aprobados usando la función .reduce().
+//Dado el siguiente array, haz la media de las notas de todos los examenes .reduce().
 
-El resultado sería 42.
-
-*/
 const exams = [
     {name: 'Abel Cabeza Román', score: 5}, 
     {name: 'Maria Aranda Jimenez', score: 1}, 
@@ -17,5 +13,4 @@ const exams = [
     {name: 'Keanu Reeves', score: 10}
 ];
 
-console.log(exams.reduce((acumulator, element) => 
-element.score >= 5 ? acumulator+element.score : acumulator, 0))
+console.log(exams.reduce((acumulator, element) => acumulator + element.score, 0)/exams.length)

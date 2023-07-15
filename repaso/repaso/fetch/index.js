@@ -11,6 +11,8 @@ const getCharacters = async () => {
   //   console.log(res.data.characters);
   return res.data.characters;
 };
+
+
 const mappedCharacters = (characterswithoutMapped) => {
   // console.log(characterswithoutMapped);
   return characterswithoutMapped.map((character) => ({
@@ -19,6 +21,7 @@ const mappedCharacters = (characterswithoutMapped) => {
     rol: character.role,
   }));
 };
+
 const drawCharacters = (characters) => {
     main$$.innerHTML=""
  for (const character of characters) {
@@ -42,7 +45,7 @@ const drawCharacters = (characters) => {
     characterFigure$$.innerHTML=
     `
         <h2>${character.nombre}</h2>
-         
+        <image src=${character.imagen}></image>
         <figcaption>${character.rol}</figcaption>
     `
     main$$.appendChild(characterFigure$$)
@@ -50,6 +53,8 @@ const drawCharacters = (characters) => {
  }
 
 }
+
+
 const drawInput = (characters) => {
     // console.log(characters);
     const input$$ = document.querySelector("input")
@@ -60,6 +65,8 @@ const searchCharacters=(filtro, characters)=> {
 //    console.log(filteredCharacters);
    drawCharacters(filteredCharacters)
 }
+
+
 const init = async () => {
   // primero hago mi petición y me espero a que esten todos mis personajes aqui dentro de la función porque no existen en otro lado
   const characters = await getCharacters();

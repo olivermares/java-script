@@ -24,12 +24,13 @@ const officers = [
   { id: 56, name: "Admiral Ozzel", hair: "brow" },
   { id: 88, name: "Commander Jerjerrod", hair: "brow" },
 ];
-const oficialessinpelo = officers.map((officer)=>(
-    {
+const oficialessinpelo = officers.map((officer)=>({
     nombre: officer.name,
     id: officer.id
    }
     ))
+
+
 console.log(oficialessinpelo);
 // const prueba = officers.map((officer)=>{
 //     if (officer.id>30) {

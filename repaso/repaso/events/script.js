@@ -35,7 +35,7 @@ const button2$$ = document.querySelector(".button")
 // console.log(button1$$,button2$$);
 const contador = (ev) => {
     if (ev.target.innerText ==="+") {
-        console.log("estoy sumando");
+        console.log("estoy sumando");  
     }else{
         console.log("estoy restando");
     }
