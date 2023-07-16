@@ -9,17 +9,18 @@ Ejecuta varias veces la función father y haz finalmente un console.log de numbe
 const numbersList = [];
 
 function sum(a,b){
-    return a+b;
+    return prompt (a+b);
 }
 
 function substract(){
-    return a-b;
+    return prompt (a-b);
 }
 
-function father(a, b, callback){
+function father (a, b, callback){
     numbersList.push(callback(a,b));
 }
 
 father(5,10,sum)
+father(10,5,substract)
 
-console.log(numbersList)
+console.log(numbersList);

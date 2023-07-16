@@ -7,8 +7,8 @@ La función father deberá ejecutar la función que reciba como callback y añad
 Ejecuta varias veces la función father y haz finalmente un console.log de userAnwsers
 */
 
-const confirm = 'Soy un texto';
-const prompt = 'Soy un texto';
+//const confirm = 'Soy un texto';
+//const prompt = 'Soy un texto';
 
 const userAnwsers = [];
 
