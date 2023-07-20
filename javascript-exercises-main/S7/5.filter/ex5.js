@@ -7,6 +7,6 @@ const streamers = [
     {name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
-const nameU = streamers.filter(streamer => streamer.name.includes('u'))
+const nameU = streamers.filter(streamer => streamer.name.toLowerCase().includes('u'))
 
 console.log(nameU)

@@ -19,13 +19,13 @@ const getCharacters = async () => {
       div$$.innerHTML = `
           <h3>${character.title}</h3>
           <h5>${character.date}</5>
-          <img src=${character.img} alt=${character.id}>
+          <img src="./public/${character.img}" alt="${character.id}"/>
           <h6>${character.rating}</h6>
           <p>${character.description}</p>
       `;
       const btn$$ = document.createElement("button");
       btn$$.textContent = "BORRAR";
-      btn$$.addEventListener("click", (removeDiv) => div$$.remove());
+      btn$$.addEventListener("click", () => div$$.remove());
   
       div$$.appendChild(btn$$);
       body$$.appendChild(div$$)

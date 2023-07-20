@@ -37,7 +37,7 @@ const drawCharacters = (characters) => {
     `;
     const btn$$ = document.createElement("button");
     btn$$.textContent = "BORRAR";
-    btn$$.addEventListener("click", (removeDiv) => div$$.remove());
+    btn$$.addEventListener("click", () => div$$.remove());
 
     div$$.appendChild(btn$$);
     body$$.appendChild(div$$)

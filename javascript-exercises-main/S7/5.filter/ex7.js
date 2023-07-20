@@ -11,12 +11,14 @@ const streamers = [
 ];
 
 const toFilterStreamers = (event) => {
-    const streamersFilter = streamers.filter(streamer => { 
+    const streamersFilter = streamers.filter(streamer => 
         streamer.name.toLowerCase().includes(event.target.value.toLowerCase())
-    });
+        
+    );
+    console.log(streamersFilter)
 }
 
 
 const input$$ = document.querySelector('[data-function="toFilterStreamers"]');
 
-input$$.addEventListener("input", handleChange);
+input$$.addEventListener("input", toFilterStreamers);
